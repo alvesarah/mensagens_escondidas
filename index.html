@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Mensagens Secretas</title>
+    </head>
+    <body>
+        <header>
+            <h1>Mensagens Secretas</h1>
+            <ul>
+                <li>Cifra de Cesar</li>
+                <li>Base 64</li>
+                <li>Sobre</li>
+                <li><a href="https://github.com/sashamoon">GitHub</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="container">
+                <section class="linhaUm">
+                    <div class="selectCriptografia">
+                        <p class='criptografia'>Escolha a criptoografia: </p>
+                        <div class="escolhaCriptografia">
+                            <select class='select' name="codificadores" onchange="escolhaCriptografia()">
+                                <option value="nulo"></option>
+                                <option value="cifraCesar" class="cifraCesar">Cifra de Cesar</option>
+                                <option value="base64" class="base64">Base 64</option>
+                            </select>
+                            <input type="text" class="rotacao" onchange="validaRotacao()">
+                        </div>
+                    </div>
+
+                    <div class="radioEscolha">
+                        <input type="radio" id="codificar" class="codificar" name="codigo" value="Codificar" onchange="botaoCriptografar()">
+                        <label for="codificar">Codificar</label><br><br>
+                        <input type="radio" id="descodificar" class="descodificar" name="codigo" value="Descodificar" onchange="botaoDescriptografar()">
+                        <label for="descodificar">Decodificar</label>
+                    </div>
+                </section>
+
+                <section class="linhaDois">
+                    <div class="textAreaResultado">
+                        <label for='mesagemRecebida'><p class='mensagem'>Digite sua mensagem: </p></label>
+                        <textarea name="mesagemRecebida" class="receber" cols="30" rows="10"></textarea>
+                        <textarea name="mesagemRecebida" class="resultado" cols="30" rows="10" disabled></textarea>
+                    </div>
+                </section>
+
+                <section class="linhaTres">
+                    <button type="submit" onclick="decisao()">
+                        <p class="bparagrafo">Carregando...</p>
+                    </button>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <h1>Mensagens Secretas</h1>
+            <p>Todos os direitos reservados &copy; 2021 Mensagens Secretas</p>
+        </footer>
+        <script src="././script/script.js"></script>
+        <script src="././script/cifraCesar.js"></script>
+        <script src="././script/base64.js"></script>
+    </body>
+</html>

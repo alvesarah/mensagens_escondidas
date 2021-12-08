@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background-image: url(./matrix_gif.gif);
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(129, 255, 117, 0.5);
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+header h1{
+    width: 50%;
+}
+
+ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    width: 50%;
+}
+
+li{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+li:hover, a:hover{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN */
+main{
+    height: 80vh;
+}
+
+.container{
+    margin: 5% 15%;
+    height: 90%;
+    width: 70%;
+    background-color: rgba(129, 255, 117, 0.5);
+}
+
+.linhaUm{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.selectCriptografia{
+    width: 50%;
+    margin-left: 15%;
+}
+
+.criptografia, .mensagem{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+select{
+    width: 45%;
+    background: rgba(0, 0, 0, 0.76);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 5px;
+    color: greenyellow;
+}
+
+.rotacao{
+    visibility: hidden;
+}
+
+.radioEscolha{
+    width: 40%;
+    margin-left: 10%;
+}
+
+.linhaDois{
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textAreaResultado{
+    width: 100%;
+    margin-left: 15%;
+}
+
+.mensagem{
+    text-transform: uppercase;
+}
+
+.receber{
+    background: rgba(0, 0, 0, 0.76);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 40%;
+    margin-right: 30px;
+    color: greenyellow;
+    padding: 10px;
+}
+
+.resultado{
+    background: rgba(0, 0, 0, 0.76);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 40%;
+    color: greenyellow;
+    padding: 10px;
+}
+
+.linhaTres{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    color: grey;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: black;
+    outline: none;
+    transition: 0.1s;
+}
+
+button:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+    background-color: rgba(129, 255, 117, 0.5);
+    padding: 20px;
+}
+
+footer h1{
+    width: 35%;
+}
+
+footer p{
+    font-size: 12px;
+}
