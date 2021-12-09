@@ -18,3 +18,17 @@ figure{
     flex-direction: row;
     align-items: center;
 }
+
+@media screen and (max-width: 700px) {
+    main{
+        color: blanchedalmond;
+    }
+    
+    .cifra{
+        height: 150vh;
+    }
+
+    figure{
+        margin-left: 20%;
+    }
+}

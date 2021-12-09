@@ -211,7 +211,7 @@ img{
 
     /* MAIN */
     main{
-        height: 120vh;
+        height: auto;
     }
 
     .container{
@@ -269,6 +269,10 @@ img{
     .receber, .resultado{
         width: auto;
         margin: 15px auto;
+    }
+
+    button{
+        margin-bottom: 20px;
     }
 
     /* FOOTER */
