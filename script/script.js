@@ -15,10 +15,9 @@ function escolhaCriptografia(){
 
 function decisao() {
     if (document.querySelector(".select").value == "base64") {  
-        base64()
-    }
-    else {
-        validaRotacao()
+        base64();
+    } else if(document.querySelector(".select").value == "cifraCesar"){
+        validaRotacao();
     }
 }
 
@@ -27,8 +26,9 @@ function botaoCriptografar() {
     botaoCode.textContent = 'Codificar';
     botaoCode.style.color = 'green';
 }
+
 function botaoDescriptografar() {
     var botaoCode = document.querySelector ('.bparagrafo')
     botaoCode.textContent = 'Decodificar';
-    botaoCode.style.color = 'red'
+    botaoCode.style.color = 'orange'
 }

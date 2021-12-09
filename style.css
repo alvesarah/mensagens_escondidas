@@ -11,7 +11,6 @@ body{
     background-image: url(./matrix_gif.gif);
 }
 
-
 /* HEADER */
 header{
     display: flex;
@@ -26,7 +25,7 @@ header h1{
     width: 50%;
 }
 
-ul{
+header ul{
     display: flex;
     justify-content: end;
     list-style: none;
@@ -49,7 +48,7 @@ a{
 
 /* MAIN */
 main{
-    height: 80vh;
+    height: 85vh;
 }
 
 .container{
@@ -169,4 +168,15 @@ footer h1{
 
 footer p{
     font-size: 12px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    width: 30%;
+}
+
+img{
+    width: 30px;
 }

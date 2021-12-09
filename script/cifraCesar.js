@@ -5,7 +5,7 @@ function validaRotacao(){
     if (radioDecodificar.checked) {
         incremento *= (-1);
     }
-    cesar(incremento)
+    cesar(incremento);
 }
 
 function cesar(incremento) {
@@ -18,6 +18,7 @@ function cesar(incremento) {
     for (var i = 0; i < textoDeEntrada.length; i++) {
         trancicao = textoDeEntrada.charCodeAt(i);
 
+        // Letras Maiúsculas
         if (trancicao >= 65 && trancicao <= 90) {
             trancicao += incremento;
             if (trancicao > 90) {
@@ -27,6 +28,7 @@ function cesar(incremento) {
             }
         }
 
+        // Letras Minúsculas
         if (trancicao >= 97 && trancicao <= 122) {
             trancicao += incremento;
             if (trancicao > 122) {
