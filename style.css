@@ -269,6 +269,7 @@ img{
     .receber, .resultado{
         width: auto;
         margin: 15px auto;
+        background-color: rgba(0, 0, 0, 0.76)
     }
 
     button{
