@@ -92,6 +92,12 @@ select{
 .radioEscolha{
     width: 40%;
     margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.codificar{
+    margin-bottom: 10px;
 }
 
 .linhaDois{
@@ -179,4 +185,94 @@ footer ul{
 
 img{
     width: 30px;
+}
+
+@media screen and (max-width: 700px) {
+
+    /* HEADER */
+    header{
+        flex-direction: column;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    header ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li{
+        width: 100px;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    /* MAIN */
+    main{
+        height: 120vh;
+    }
+
+    .container{
+        margin: 5% 8%;
+        height: 90%;
+        width: 85%;
+    }
+
+    .linhaUm{
+        display: block;
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+    }
+
+    .selectCriptografia{
+        margin: 0 30px;
+    }
+
+    .criptografia{
+        width: 300px;
+    }
+
+    .escolhaCriptografia{
+        display: flex;
+    }
+
+    select{
+        width: max-content;
+        margin-bottom: 20px;
+    }
+
+    .radioEscolha{
+        width: auto;
+        flex-direction: row;
+    }
+
+    .descodificar{
+        margin-left: 10px;
+    }
+
+    .linhaDois{
+       flex-direction: column;
+    }
+
+    .textAreaResultado{
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+    .mensagem{
+        margin: 0 20px;
+    }
+
+    .receber, .resultado{
+        width: auto;
+        margin: 15px auto;
+    }
+
+    /* FOOTER */
+    footer{
+        flex-direction: column;
+    }
 }

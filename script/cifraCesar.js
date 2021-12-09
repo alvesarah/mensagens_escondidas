@@ -38,6 +38,6 @@ function cesar(incremento) {
             }
         }
 
-        document.querySelector(".resultado").innerHTML += String.fromCharCode(trancicao);
+        textoDeSaida.innerHTML += String.fromCharCode(trancicao);
     }
 }
